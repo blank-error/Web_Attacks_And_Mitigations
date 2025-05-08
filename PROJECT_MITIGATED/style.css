@@ -1,0 +1,265 @@
+/* GENERAL RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* MAIN COLORS */
+:root {
+    --primary-color: #d3542f;
+    --secondary-color: #333;
+    --text-color: white;
+    --btn-hover: #c63c1d;
+}
+
+/* BODY STYLING */
+body {
+    background: url("img/gaming_background.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text-color);
+    text-align: center;
+    height: auto;
+    overflow-y: auto;
+}
+
+/* NAVBAR */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 28px;
+    padding-left: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* HERO SECTION */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay to improve text readability */
+    padding: 30px 20px;
+    border-radius: 10px;
+    gap: 40px;
+}
+
+/* Make the hero section centered but not affected by comments */
+.hero {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+}
+
+/* TEXT STYLES */
+.container h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* BUTTON GROUP */
+.buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+/* JOIN NOW BUTTON */
+.join-btn {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+}
+
+/* HOVER EFFECT */
+.join-btn:hover {
+    background-color: var(--btn-hover);
+}
+
+.login-btn:hover {
+    background-color: #444;
+}
+
+/* LOGIN PAGE STYLING */
+.login-container {
+    background: rgba(0, 0, 0, 0.8); /* Dark overlay effect */
+    padding: 40px;
+    border-radius: 10px;
+    width: 350px;
+    margin: 100px auto;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 50, 50, 0.5);
+}
+
+.login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #222;
+    color: white;
+}
+
+.login-btn {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: var(--btn-hover);
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--primary-color);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    position: static;
+}
+
+.footer p {
+    color: var(--text-color);
+}
+
+/* Leave a Comment Section */
+.comments {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 25px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 700px;
+    margin-top: 40px;
+}
+
+.comments h3 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: var(--text-color);
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment-form input,
+.comment-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #222;
+    color: white;
+    resize: none;
+}
+
+.comment-form textarea {
+    min-height: 80px;
+}
+
+.comment-form button {
+    align-self: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.comment-form button:hover {
+    background-color: var(--btn-hover);
+}
+
+.comment-display {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.comment-box {
+    color: white;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.no-comments {
+    color: #ccc;
+    font-style: italic;
+}
